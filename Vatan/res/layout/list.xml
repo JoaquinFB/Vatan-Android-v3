@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mad="http://schemas.android.com/apk/res/com.amvg.vatan.main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/navigation_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navigation_bar" >
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:src="@drawable/navigation_bar_logo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <de.madvertise.android.sdk.MadvertiseView
+        android:id="@+id/madad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#000000"
+        mad:bannerType="mma"
+        mad:placement_type="inline" />
+
+    <View
+        android:id="@+id/BannerDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

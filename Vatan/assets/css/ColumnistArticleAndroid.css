@@ -1,0 +1,45 @@
+/* MAIN */
+html {-webkit-text-size-adjust:none}
+body {margin:0px;padding:0px;background-color:#ffffff;font-family:Helvetica, Arial, sans-serif;font-size:15px;color:#666666}
+a {color:#b51419;text-decoration:none}
+
+div.HeaderBar {height:22px;padding:6px 10px 4px 10px;background:url(HeaderBar4Content.png) repeat-x top left #e0e0e0;font-size:15px;font-weight:bold}
+div.Banner {border-bottom:2px solid #000; background-color: #000000}
+div.Banner a {display:block}
+div.Banner img {display:block;margin:auto}
+
+div.Content {padding:10px}
+div.Content .Image {float:left;display:inline-block;margin:0 10px 0 0}
+div.Content .Image img {border:1px solid #e0e0e0;height:87px}
+div.Content .Columnist {margin:0px;font-size:15px;color:#333;font-weight:bold}
+div.Content .CornerName {margin-top:5px;font-size:15px;color:#666;font-weight:bold}
+div.Content div.Contents {margin-top:5px;font-size:13px;color:#b51419;font-weight:bold}
+div.Content div.Contents a {color:#b51419;text-decoration:none}
+div.Content .PublishDate {margin-top:5px;font-size:13px;color:#333}
+div.Content .SocialMedia {clear:both}
+div.Content .SocialMedia table {border:0;border-collapse: collapse;border-spacing:0}
+div.Content .SocialMedia td {padding:10px 10px 0 0;vertical-align:top}
+div.Content .Title {clear:both;padding-top:10px;font-size:17px;color:#b51419;font-weight:bold}
+div.Content .Spot {margin-top:10px;font-size:15px;color:#333;font-weight:bold}
+div.Content .Description {margin-top:10px}
+div.Content .Description p {margin:10px 0}
+div.Content .Description img {display:block;max-width:300px}
+
+div.Content .Description .dtyimg {float:left;margin:5px 15px 15px 0;position:relative}
+div.Content .Description .bhorz {width:100%;background:#ede9de;color:#000}
+div.Content .Description .bhorz img {width:83px;height:auto;float:left;margin:0}
+div.Content .Description .bhorz a {float:left;height:auto; text-decoration:none}
+div.Content .Description .bhorz .ssB {color:#000;padding:10px;display:block;font-size:15px;font-weight:bold;float:none}
+div.Content .Description .bhorz .ssB:hover {color:#000 !important}
+div.Content .Description .vmid {display:table-cell;height:69px;vertical-align:middle;}
+div.Content .Description .ficon {display:none;}
+div.Content .Description table.hvideo {width:300px;border-collapse:collapse;border-spacing:0}
+div.Content .Description table.hvideo td {padding:0}
+div.Content .Description a.hVideo {color:#333; text-decoration:none}
+div.Content .Description a.hVideo strong {display:block;width:300px}
+
+/* FOOTER */
+.Footer {border-top:1px solid #e0e0e0;padding:20px 0;font-size:15px;color:#666;text-align:center}
+.Footer a {color:#666}
+.Footer .Copyright {font-size:11px}
+

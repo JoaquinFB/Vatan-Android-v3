@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LiveRail Examples</string>
+    <string name="example_interstitial_fullscreen">Fullscreen Interstitial</string>
+    <string name="example_interstitial_custom">Custom Interstitial</string>
+    <string name="example_preroll">Preroll Ad</string>
+    <string name="example_midroll">Midroll Ad</string>
+
+</resources>

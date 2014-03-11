@@ -1,0 +1,25 @@
+/* MAIN */
+html {-webkit-text-size-adjust:none}
+body {margin:0px;padding:0px;background-color:#ffffff;font-family:Helvetica, Arial, sans-serif;font-size:15px;color:#666666}
+a {color:#b51419;text-decoration:none}
+
+div.HeaderBar {height:22px;padding:6px 10px 4px 10px;background:url(HeaderBar4Content.png) repeat-x top left #e0e0e0;font-size:15px;font-weight:bold}
+div.Banner {border-bottom:2px solid #000; background-color: #000000}
+div.Banner a {display:block}
+div.Banner img {display:block;margin:auto}
+
+div.ContentImage {width:100%;background-color:#000}
+div.ContentImage a {display:block;position:relative;width:100%}
+div.ContentImage img {display:block;border:0;margin:auto;width:320px}
+div.ContentImage .VideoPlayIcon {position:absolute;top:0;left:0;height:100%;width:100%;background:url(video_play.png) center center no-repeat;z-index:999;}
+div.Content {padding:10px}
+div.Content .Title {clear:both;font-size:17px;color:#b51419;font-weight:bold}
+div.Content .Spot {margin-top:10px;font-size:15px;color:#333333}
+div.Content .PublishDate {margin-top:10px;font-size:13px;color:#333333}
+div.Content .ViewCount {margin-top:10px;font-size:13px;color:#333333}
+div.Content .Category {margin-top:10px;font-size:13px;color:#333333}
+
+/* FOOTER */
+.Footer {border-top:1px solid #e0e0e0;padding:20px 0;font-size:15px;color:#666;text-align:center}
+.Footer a {color:#666}
+.Footer .Copyright {font-size:11px}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amvg.vatan.main"
+    android:versionCode="12"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label=""
+        android:theme="@style/NoTitleTheme" >
+        <activity
+            android:name="com.amvg.vatan.main.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.MainMenu"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.BreakingNews"
+            android:label="@string/title_activity_breaking_news" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Columnists"
+            android:label="@string/title_activity_columnists" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.ColumnistArticle"
+            android:label="@string/title_activity_columnist_article" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.ColumnistArticles"
+            android:label="@string/title_activity_columnist_articles" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.NewsCategory"
+            android:label="@string/title_activity_news_category" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.NewsCategories"
+            android:label="@string/title_activity_news_categories" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.NewsArticle"
+            android:label="@string/title_activity_news_article" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.PhotoGallery"
+            android:label="@string/title_activity_photo_gallery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Video"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.VideoCategory"
+            android:label="@string/title_activity_video_category" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.VideoDetail"
+            android:label="@string/title_activity_video_detail" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.VideoPlay"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_video_play"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.InterstitialBanner"
+            android:label="@string/title_activity_interstitial_banner" >
+        </activity>
+        
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- open external urls -->
+        <activity android:name="de.madvertise.android.sdk.MadvertiseActivity" />
+
+        <!-- Setup your site token. For tests, use 'TestTokn' -->
+        <meta-data
+            android:name="madvertise_site_token"
+            android:value="PmPLFHI2" />
+        <!-- PmPLFHI2 -->
+
+
+        <!-- Mraid TestSuite -->
+        <activity android:name="android.app.Activity" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <!-- PreRoll -->
+        <activity
+            android:name="com.mobilike.preroll.PreRollActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Sampiyon"
+            android:label="@string/title_activity_sampiyon" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Weather"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.Horoscopes"
+            android:label="@string/title_activity_horoscopes" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.HoroscopesArticle"
+            android:label="@string/title_activity_horoscopesarticle" >
+        </activity>
+        <activity
+            android:name="com.amvg.vatan.main.WeatherLocation"
+            android:label="@string/title_activity_weatherlocation" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="de.madvertise.test" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>
