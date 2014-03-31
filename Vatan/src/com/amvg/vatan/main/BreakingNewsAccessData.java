@@ -259,7 +259,7 @@ public class Result {
     protected void onPreExecute() {
            Dialog = new ProgressDialog(this.contextDialog);
            Dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-           Dialog.setMessage("Yükleniyor...Lütfen Bekleyiniz...");
+           Dialog.setMessage(context.getResources().getString(R.string.title_yukleniyor));
            Dialog.setCancelable(false);
            Dialog.show();
    

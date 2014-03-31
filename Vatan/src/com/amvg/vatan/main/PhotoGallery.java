@@ -5,6 +5,9 @@ import com.comscore.analytics.comScore;
 import com.flurry.android.FlurryAgent;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
+import com.liquidm.sdk.Ad;
+import com.liquidm.sdk.AdListener;
+import com.liquidm.sdk.AdView;
 
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -137,6 +140,29 @@ public class PhotoGallery extends FragmentActivity {
 			}
 		});
 		
+		AdView adView = (AdView)findViewById(R.id.adView);
+		adView.setListener(new AdListener() 
+		{
+			@Override
+			public void onAdDismissScreen(Ad ads) {				
+			}
+
+			@Override
+			public void onAdFailedToLoad(Ad ads) {				
+			}
+
+			@Override
+			public void onAdLeaveApplication(Ad ads) {				
+			}
+
+			@Override
+			public void onAdLoad(Ad ads) {				
+			}
+
+			@Override
+			public void onAdPresentScreen(Ad ads) {				
+			}			
+		});
 		
 		
 //		webView=(WebView)findViewById(R.id.webView);

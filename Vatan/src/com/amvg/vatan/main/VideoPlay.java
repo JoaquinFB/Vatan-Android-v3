@@ -2,17 +2,20 @@ package com.amvg.vatan.main;
 
 
 
+import com.amvg.vatan.main.LiverailPlayer.OnCloseListener;
 import com.mobilike.preroll.PreRollManager;
 
 import android.net.Uri;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
-import android.app.Activity;
+//import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class VideoPlay extends Activity {
+public class VideoPlay extends FragmentActivity {
 	
 	VideoView videoView;
 	private String url;
@@ -36,23 +39,70 @@ public class VideoPlay extends Activity {
 		setContentView(R.layout.activity_video_play);
 //		if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this))
 //            return;
-		String  preRollUrl = null;
+		String  preRollToken = null;
 		
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
 		     this.url=extras.getString("url");
 		     String categoryId = extras.getString("categoryId");
-		     preRollUrl = getPreRollUrl(categoryId);
+		     preRollToken = getPreRollUrl(categoryId);
 		}
 //		Video_Play(url);
 		
-		PreRollManager.sharedInstance().showPreRoll(this, preRollUrl);
+		LiverailPlayer liverailPlayer = new LiverailPlayer(preRollToken);
+		liverailPlayer.setOnCloseListener(new OnCloseListener() 
+		{			
+			@Override
+			public void onClose() 
+			{
+				Video_Play(VideoPlay.this.url);
+			}
+		});
+		
+		FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
+		liverailPlayer.show(trans, "liverailPlayer");
+		
+		
+		//PreRollManager.sharedInstance().showPreRoll(this, preRollUrl);
 	}
 	
 	private String getPreRollUrl(String categoryId)
 	{
 		String url = null;
 		
+		//Spor
+		if("3".equalsIgnoreCase(categoryId))
+		{
+			url = "29330";
+		}
+		//Fragman
+		else if("13".equalsIgnoreCase(categoryId))
+		{
+			url = "29333";
+		}
+		//Magazin
+		else if("38".equalsIgnoreCase(categoryId))
+		{
+			url = "29329";
+		}
+		else if("2".equalsIgnoreCase(categoryId))
+		{
+			url = "29328";
+		}
+		else if("44".equalsIgnoreCase(categoryId))
+		{
+			url = "29332";
+		}
+		else if("4".equalsIgnoreCase(categoryId))
+		{
+			url = "29331";
+		}
+		else
+		{
+			url = "29327";
+		}
+		return url;
+		/*
 		// Amatör
 		if("13".equals(categoryId))
 		{
@@ -138,7 +188,7 @@ public class VideoPlay extends Activity {
 			url = "http://mobworkz.com/video/vatan_manset_android.xml";
 		}
 		
-		return url;
+		return url;*/
 	}
 	
 	@SuppressLint("NewApi")

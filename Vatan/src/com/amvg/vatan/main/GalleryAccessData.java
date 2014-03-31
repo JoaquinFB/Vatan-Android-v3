@@ -367,7 +367,7 @@ public class GalleryAccessData extends AsyncTask<String, String, String>
 	{
 		Dialog = new ProgressDialog(this.contextDialog);
         Dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        Dialog.setMessage("Yükleniyor...");
+        Dialog.setMessage(context.getResources().getString(R.string.title_yukleniyor));
         Dialog.setCancelable(false);
         Dialog.show();
     }

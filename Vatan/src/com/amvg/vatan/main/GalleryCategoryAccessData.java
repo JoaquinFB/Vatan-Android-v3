@@ -128,7 +128,7 @@ public class GalleryCategoryAccessData extends AsyncTask<String, String, String>
 		Home.homeMainLayout.setVisibility(View.GONE);
            Dialog = new ProgressDialog(this.ContextDialog);
            Dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-           Dialog.setMessage("Yükleniyor...");
+           Dialog.setMessage(context.getResources().getString(R.string.title_yukleniyor));
            Dialog.setCancelable(false);
            Dialog.show();
    

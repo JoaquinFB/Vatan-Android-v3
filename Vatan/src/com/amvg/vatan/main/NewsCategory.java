@@ -46,7 +46,7 @@ public class NewsCategory extends Activity implements AnimationListener {
 	   public  View app;
 	     public boolean menuOut = false;
 	     public static Context context; 
-	     public  AnimParams animParams = new AnimParams();
+	    public  AnimParams animParams = new AnimParams();
 	    public  ListView listView_menu;
 	    private AppMap appmap;
 	    
@@ -249,7 +249,7 @@ public class NewsCategory extends Activity implements AnimationListener {
 	
 	void layoutApp(boolean menuOut) 
 	{
-        System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","+ animParams.bottom + "]");
+        //System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","+ animParams.bottom + "]");
         FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)app.getLayoutParams();
 		if (menuOut)
 		{

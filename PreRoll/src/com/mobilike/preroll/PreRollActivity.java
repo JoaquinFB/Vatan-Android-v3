@@ -82,7 +82,7 @@ public class PreRollActivity extends BaseActivity
 		
 		private String createLoadMessage()
 		{
-			StringBuffer buffer = new StringBuffer("Yükleniyor");
+			StringBuffer buffer = new StringBuffer(getResources().getString(R.string.title_yukleniyor));
 			
 			for(int i = 0; i < dotCount; i++)
 			{
@@ -160,7 +160,7 @@ public class PreRollActivity extends BaseActivity
 			int countdownTime = PreRollActivity.this.preRoll.getRestrictedDuration() - elapsedTime;
 			
 			buffer.append(countdownTime);
-			buffer.append(" sn. sonra reklamı atlayabilirsiniz");
+			buffer.append(" " + getResources().getString(R.string.title_sn_sonra));
 			
 			return buffer.toString();
 		}

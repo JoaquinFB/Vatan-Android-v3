@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+    <string name="title_yukleniyor">Yükleniyor</string>
+    <string name="title_sn_sonra">sn. sonra reklamı atlayabilirsiniz</string>
 </resources>

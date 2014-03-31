@@ -434,7 +434,7 @@ public class Sampiyon extends FragmentActivity implements AnimationListener
 	
 	void layoutApp(boolean menuOut)
 	{
-		System.out.println("layout [" + animParams.left + "," + animParams.top+ "," + animParams.right + "," + animParams.bottom + "]");
+		//ystem.out.println("layout [" + animParams.left + "," + animParams.top+ "," + animParams.right + "," + animParams.bottom + "]");
 		FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)app.getLayoutParams();
 		params.gravity=Gravity.TOP;
 		if (menuOut)

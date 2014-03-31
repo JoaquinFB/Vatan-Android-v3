@@ -22,9 +22,9 @@ import com.mobilike.garantiad.GarantiAdManager;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.PageIndicator;
 
-import de.madvertise.android.sdk.MadvertiseTracker;
-import de.madvertise.android.sdk.MadvertiseView;
-import de.madvertise.android.sdk.MadvertiseView.MadvertiseViewCallbackListener;
+//import de.madvertise.android.sdk.MadvertiseTracker;
+//import de.madvertise.android.sdk.MadvertiseView;
+//import de.madvertise.android.sdk.MadvertiseView.MadvertiseViewCallbackListener;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -62,7 +62,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 
 @SuppressLint({ "NewApi", "SetJavaScriptEnabled" })
-public class Home extends FragmentActivity implements AnimationListener,MadvertiseViewCallbackListener {
+public class Home extends FragmentActivity implements AnimationListener {//,MadvertiseViewCallbackListener {
 	private ListView listView;
 	//private ViewFlow viewFlow;
 	private File myFile;
@@ -162,8 +162,8 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 	private Tracker mGaTrackerGlobal;
 	private GoogleAnalytics mGaInstance;
 //	private GoogleAnalyticsTracker mGATracker;
-	private MadvertiseTracker mTracker;
-    private MadvertiseView mMadView;
+	//private MadvertiseTracker mTracker;
+    //private MadvertiseView mMadView;
     private View BannerDivider;
     public static boolean BannerEnabled=false;
     
@@ -175,7 +175,7 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 	   public  View app;
 	     public boolean menuOut = false;
 	     public static Context context; 
-	     public  AnimParams animParams = new AnimParams();
+	    public  AnimParams animParams = new AnimParams();
 	    public  ListView listView_menu;
 	
 	    
@@ -307,13 +307,13 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 		
 		updateApp();
 		
-		MadvertiseView.setAge("20-26");
-        MadvertiseView.setGender(MadvertiseView.GENDER_FEMALE);
+		//MadvertiseView.setAge("20-26");
+        //MadvertiseView.setGender(MadvertiseView.GENDER_FEMALE);
         
-        mMadView = (MadvertiseView) findViewById(R.id.madad);
-        mMadView.setMadvertiseViewCallbackListener(this);
+        //mMadView = (MadvertiseView) findViewById(R.id.madad);
+        //mMadView.setMadvertiseViewCallbackListener(this);
         
-        mTracker = MadvertiseTracker.getInstance(this);
+        //mTracker = MadvertiseTracker.getInstance(this);
 		
 		viewUtils=new ViewUtils();
 		MenuClickCount=0;
@@ -1111,12 +1111,12 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 				
 			}
 		} catch (IOException e) {
-			Toast.makeText(getApplicationContext(), "Ba��lant�� Hatas��", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			Toast.makeText(getApplicationContext(), "Ba��lant�� Hatas��", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -1326,7 +1326,7 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 	    // Send a screen view when the Activity is displayed to the user.
 	    mGaTracker.sendView("Home"); //sayma kodu
 	    mGaTrackerGlobal.sendView("Home");
-	    mTracker.reportActive();
+	    //mTracker.reportActive();
 	  }
 	
 	@Override
@@ -1360,12 +1360,12 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 			}
 			
 		} catch (IOException e) {
-			Toast.makeText(getApplicationContext(), "Ba��lant�� Hatas��", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			Toast.makeText(getApplicationContext(), "Ba��lant�� Hatas��", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -1391,7 +1391,7 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 	{
 		super.onStop();
 		FlurryAgent.onEndSession(this);
-		mTracker.reportInactive();
+		//mTracker.reportInactive();
 	}
 	
 	@Override
@@ -1534,7 +1534,7 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 		app.setLayoutParams(params);
 		app.clearAnimation();
 	}
-
+	
 	@Override
 	public void onAnimationEnd(Animation animation)
 	{
@@ -1589,7 +1589,7 @@ public class Home extends FragmentActivity implements AnimationListener,Madverti
 	}
 
 
-
+/*
 @Override
 public void onLoaded(boolean succeed, MadvertiseView madView)
 {
@@ -1640,5 +1640,5 @@ protected void onDestroy() {
 
     // Report that the application is being ended
     mTracker.reportStop();
-}
+}*/
 }

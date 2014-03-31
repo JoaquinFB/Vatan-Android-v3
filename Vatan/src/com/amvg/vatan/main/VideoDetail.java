@@ -393,7 +393,7 @@ public class VideoDetail extends Activity implements OnTouchListener, Handler.Ca
 		customHtml=customHtml+"<div class=\"Title\">"+Title+"</div>";
 		customHtml=customHtml+"<div class=\"Spot\">"+Spot+"</div>";
 		String[] time=PublishTime.split(" ");
-		customHtml=customHtml+"<div class=\"PublishDate\"><b>Yayınlanma Tarihi:</b> "+time[0]+"</div>";
+		customHtml=customHtml+"<div class=\"PublishDate\"><b>Yay�nlanma Tarihi:</b> "+time[0]+"</div>";
 //		customHtml=customHtml+"<div class=\"ViewCount\"><b>İzlenme Sayısı:</b>"+ViewCount+"</div>";
 //		customHtml=customHtml+"<div class=\"Category\"><b>Kategorisi:</b>"+Category+"</div>";
 		customHtml=customHtml+"</div>";

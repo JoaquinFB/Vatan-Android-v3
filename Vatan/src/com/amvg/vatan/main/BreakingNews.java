@@ -208,17 +208,17 @@ public class BreakingNews extends Activity implements AnimationListener {
 				breakingNews.execute(in);
 			}
 		} catch (IOException e) {
-			Toast.makeText(getApplicationContext(), "Bağlantı Hatası", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParseException e) {
-			Toast.makeText(getApplicationContext(), "Bağlantı Hatası", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (JSONException e) {
-			Toast.makeText(getApplicationContext(), "Bağlantı Hatası", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getResources().getString(R.string.title_error_text), Toast.LENGTH_LONG).show();
 			finish();
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -269,8 +269,8 @@ public class BreakingNews extends Activity implements AnimationListener {
 
 	void layoutApp(boolean menuOut) {
 		Log.e("layoutApp","layoutApp");
-        System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","
-                + animParams.bottom + "]");
+        //System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","
+       //         + animParams.bottom + "]");
         FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)app.getLayoutParams();
 		if (menuOut)
 		{

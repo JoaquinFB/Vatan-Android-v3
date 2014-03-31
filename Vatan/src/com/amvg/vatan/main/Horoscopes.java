@@ -197,7 +197,7 @@ public class Horoscopes extends Activity implements AnimationListener
 	
 	void layoutApp(boolean menuOut) 
 	{
-        System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","+ animParams.bottom + "]");
+        //System.out.println("layout [" + animParams.left + "," + animParams.top + "," + animParams.right + ","+ animParams.bottom + "]");
         FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)app.getLayoutParams();
 		if (menuOut)
 		{

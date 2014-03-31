@@ -96,6 +96,10 @@
         <!-- open external urls -->
         <activity android:name="de.madvertise.android.sdk.MadvertiseActivity" />
 
+        <activity
+            android:name="com.liquidm.sdk.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenLayout|screenSize|smallestScreenSize" />
+        
         <!-- Setup your site token. For tests, use 'TestTokn' -->
         <meta-data
             android:name="madvertise_site_token"

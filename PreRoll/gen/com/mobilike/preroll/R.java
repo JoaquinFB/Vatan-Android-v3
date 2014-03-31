@@ -39,6 +39,8 @@ public final class R {
         public static int action_settings=0x7f050001;
         public static int app_name=0x7f050000;
         public static int hello_world=0x7f050002;
+        public static int title_sn_sonra=0x7f050004;
+        public static int title_yukleniyor=0x7f050003;
     }
     public static final class style {
         /** 

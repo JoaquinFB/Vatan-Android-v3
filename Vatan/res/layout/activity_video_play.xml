@@ -2,12 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
     tools:context=".VideoPlay" >
 
     
     <VideoView
-                 android:layout_height="match_parent"
-                 android:layout_width="match_parent" android:id="@+id/VideoView"/>  
-  	    
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"
+           android:fitsSystemWindows="true"
+           android:gravity="center_vertical|center_horizontal"
+           android:id="@+id/VideoView"/>  
+ 
 
 </RelativeLayout>

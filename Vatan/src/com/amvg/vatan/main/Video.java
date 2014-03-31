@@ -238,7 +238,7 @@ public class Video extends FragmentActivity implements AnimationListener
 		
 		Calendar c = Calendar.getInstance(); 
 		int year = c.get(Calendar.YEAR);
-		((TextView)findViewById(R.id.Copyrigth)).setText("Copyright \u00A9 "+Integer.toString(year)+" Vatan Gazetesi");
+		((TextView)findViewById(R.id.Copyrigth)).setText("Copyright \u00A9 " + Integer.toString(year) + " Vatan Gazetesi");
 		
 		final ScrollView sv = (ScrollView) findViewById(R.id.scrollview);
 		
@@ -1125,7 +1125,7 @@ public class Video extends FragmentActivity implements AnimationListener
 	
 	void layoutApp(boolean menuOut)
 	{
-		System.out.println("layout [" + animParams.left + "," + animParams.top+ "," + animParams.right + "," + animParams.bottom + "]");
+		//System.out.println("layout [" + animParams.left + "," + animParams.top+ "," + animParams.right + "," + animParams.bottom + "]");
 		FrameLayout.LayoutParams params = (FrameLayout.LayoutParams)app.getLayoutParams();
 		if (menuOut)
 		{

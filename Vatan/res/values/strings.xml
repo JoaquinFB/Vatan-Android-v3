@@ -36,6 +36,7 @@
     <string name="title_activity_horoscopes">Horoscopes</string>
     <string name="title_activity_horoscopesarticle">HoroscopesArticle</string>
     <string name="title_activity_weatherlocation">HoroscopesArticle</string>
-    
-
+   
+    <string name="title_error_text">Bağlantı Hatası</string>
+    <string name="title_yukleniyor">Yükleniyor</string>
 </resources>
